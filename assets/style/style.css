@@ -1,0 +1,519 @@
+/* Reset Browser To Default */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol,
+ul {
+	list-style: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 
+
+
+
+
+
+My code
+
+
+
+
+
+
+*/
+
+body {
+	background: #1b1e1e;
+}
+.is-hidden {
+	display: none;
+}
+/*  */
+/*  */
+/*  */
+/* Logo */
+header div #TheWitcherLogo {
+	width: 100px;
+	display: block;
+	margin: auto;
+	border-radius: 50%;
+	border: 1px solid #a55255;
+}
+
+/*  */
+/*  */
+/*  */
+/* Header */
+
+body .navbar {
+	width: 100%;
+	height: 200px;
+	background-color: #111111;
+	filter: drop-shadow(0px 5px 3px black);
+	padding-top: 20px;
+}
+nav {
+	float: right;
+	width: 100%;
+}
+header nav ul {
+	list-style: none;
+	width: 100%;
+	text-align: center;
+}
+header nav ul li {
+	display: inline-block;
+	justify-content: center;
+	align-items: center;
+	line-height: 50px;
+	margin-left: 2px;
+	margin-right: 2px;
+	height: 50px;
+}
+header nav ul li a {
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: "Baloo Paaji 2", cursive;
+	font-size: 16px;
+	line-height: 100px;
+}
+header nav ul li a.active {
+	border: 1px solid white;
+	padding: 3px;
+}
+.centered {
+	width: 100%;
+	margin: 0 auto;
+}
+
+/* Image-Animation */
+.img-animation-section {
+	border: 1px solid black;
+	height: 350px;
+	background-color: #f2f4f3;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#img-animation-title {
+	top: -150px;
+	color: #1b1e1e;
+	position: relative;
+	text-align: center;
+	margin-top: 5px;
+	font-family: Yeon Sung;
+	font-size: 30px;
+	text-transform: uppercase;
+}
+.image-animation {
+	background-color: white;
+	width: 85%;
+	height: 200px;
+	position: absolute;
+	background-image: url("/assets/images/1.jpg");
+	background-size: 100% 100%;
+	box-shadow: 2px 2px 10px black;
+	animation: slider 18s infinite linear;
+}
+@keyframes slider {
+	0% {
+		background-image: url("/assets/images/1.jpg");
+	}
+	35% {
+		background-image: url("/assets/images/2.jpg");
+	}
+	75% {
+		background-image: url("/assets/images/3.jpg");
+	}
+}
+/*  */
+/* Cards */
+
+#Characters-title {
+	display: block;
+	font-size: 26px;
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: "Baloo Bhaina 2", cursive;
+}
+section #char-card {
+	width: 280px;
+	height: 350px;
+	margin: 0 auto;
+	padding: 10px 0 20px 0;
+	display: flex;
+	vertical-align: middle;
+	align-items: center;
+	justify-content: center;
+}
+#char-card #char-img {
+	width: 280px;
+	height: 350px;
+	border: 1px solid black;
+}
+#char-text {
+	position: absolute;
+	line-height: 15px;
+	color: white;
+	text-align: center;
+	font-size: 16px;
+	width: 220px;
+	min-height: 10em;
+	max-height: 350px;
+}
+.opacity100text {
+	display: none;
+}
+.opacity20 {
+	opacity: 20%;
+}
+/*  */
+/*  */
+
+/* Media queries */
+@media only screen and (min-width: 374px) {
+	header nav ul li {
+		margin-left: 10px;
+		margin-right: 5px;
+	}
+}
+@media only screen and (min-width: 500px) {
+	header nav ul li {
+		margin-left: 30px;
+		margin-right: 20px;
+	}
+
+	.img-animation-section {
+		border: 1px solid black;
+		height: 450px;
+		background-color: #f2f4f3;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	#img-animation-title {
+		font-size: 45px;
+		top: -200px;
+	}
+	.image-animation {
+		width: 85%;
+		height: 300px;
+		position: absolute;
+
+		text-align: center;
+		background-image: url("/assets/images/1.jpg");
+		background-size: 100% 100%;
+		box-shadow: 2px 2px 10px black;
+		animation: slider 18s infinite linear;
+	}
+}
+@media only screen and (min-width: 720px) {
+	header nav ul li {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	header nav ul li a {
+		color: white;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-family: "Baloo Paaji 2", cursive;
+		font-size: 20px;
+		line-height: 100px;
+	}
+	.img-animation-section {
+		border: 1px solid black;
+		height: 550px;
+		background-color: #f2f4f3;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	#img-animation-title {
+		font-size: 45px;
+		top: -250px;
+	}
+	.image-animation {
+		width: 85%;
+		height: 400px;
+		position: absolute;
+
+		text-align: center;
+		background-image: url("/assets/images/1.jpg");
+		background-size: 100% 100%;
+		box-shadow: 2px 2px 10px black;
+		animation: slider 18s infinite linear;
+	}
+}
+@media only screen and (min-width: 1000px) {
+	body .navbar {
+		width: 100%;
+		height: 100px;
+		background-color: #111111;
+		filter: drop-shadow(0px 5px 3px black);
+		padding: 0;
+		display: flex;
+	}
+	header div #TheWitcherLogo {
+		margin-left: 5px;
+		margin-top: 10px;
+		width: 80px;
+		float: left;
+		border-radius: 50%;
+		border: 1px solid #a55255;
+	}
+
+	nav {
+		position: relative;
+		width: 100%;
+	}
+	header nav ul {
+		list-style: none;
+		width: 100%;
+		text-align: center;
+		float: right;
+	}
+	header nav ul li {
+		line-height: 105px;
+		float: right;
+	}
+	header nav ul li a {
+		color: white;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-family: "Baloo Paaji 2", cursive;
+		font-size: 18px;
+	}
+	header nav ul li a.active {
+		border: 1px solid white;
+		padding: 5px;
+	}
+	.img-animation-section {
+		border: 1px solid black;
+		height: 600px;
+		background-color: #f2f4f3;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	#img-animation-title {
+		font-size: 45px;
+		top: -270px;
+	}
+	.image-animation {
+		width: 80%;
+		height: 450px;
+		position: absolute;
+
+		text-align: center;
+		background-image: url("/assets/images/1.jpg");
+		background-size: 100% 100%;
+		box-shadow: 2px 2px 10px black;
+		animation: slider 18s infinite linear;
+	}
+	#Characters-title {
+		display: block;
+		font-size: 40px;
+		color: white;
+		text-align: center;
+		text-transform: uppercase;
+		font-family: "Baloo Bhaina 2", cursive;
+	}
+	section#caracter-cards {
+		width: 100%;
+		margin: 0 auto;
+		display: flex;
+		flex-wrap: wrap;
+		height: 90%;
+	}
+	section div#char-card {
+		display: flex;
+		float: left;
+		padding: 10px 0px 30px 0;
+	}
+	#book-card #char-img {
+		width: 280px;
+		height: 350px;
+		border: 1px solid black;
+	}
+	#char-text {
+		position: absolute;
+		color: white;
+		text-align: center;
+		width: 220px;
+	}
+}
+@media only screen and (min-width: 1300px) {
+	.img-animation-section {
+		border: 1px solid black;
+		height: 600px;
+		background-color: #f2f4f3;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.img-animation-title {
+		font-size: 45px;
+	}
+	.image-animation {
+		width: 60%;
+		height: 450px;
+		position: absolute;
+
+		text-align: center;
+		background-image: url("/assets/images/1.jpg");
+		background-size: 100% 100%;
+		box-shadow: 2px 2px 10px black;
+	}
+	section#caracter-cards {
+		width: 80%;
+		margin: 0 auto;
+		display: flex;
+		flex-wrap: wrap;
+		height: 90%;
+	}
+}
+@media only screen and (min-width: 1600px) {
+	.img-animation-section {
+		border: 1px solid black;
+		height: 650px;
+		background-color: #f2f4f3;
+	}
+	#img-animation-title {
+		font-size: 45px;
+		top: -295px;
+	}
+	.image-animation {
+		width: 1050px;
+		height: 500px;
+		position: absolute;
+
+		text-align: center;
+		background-image: url("/assets/images/1.jpg");
+		background-size: 100% 100%;
+		box-shadow: 2px 2px 10px black;
+	}
+}
